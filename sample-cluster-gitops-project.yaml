@@ -1,0 +1,14 @@
+apiVersion: project.openshift.io/v1
+kind: Project
+metadata:
+  annotations:
+    openshift.io/description: Project used for OpenShift GitOps testing
+    openshift.io/display-name: Sample Cluster GitOps
+    openshift.io/requester: phuong
+    openshift.io/sa.scc.mcs: s0:c25,c10
+    openshift.io/sa.scc.supplemental-groups: 1000620000/10000
+    openshift.io/sa.scc.uid-range: 1000620000/10000
+  name: sample-cluster-gitops
+spec:
+  finalizers:
+  - kubernetes
